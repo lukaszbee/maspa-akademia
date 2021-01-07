@@ -1,0 +1,189 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* strona glowna */
+
+
+nav {
+    display: flex;
+    height:  20vh;
+    justify-content: center;
+    margin-top: 1%;
+
+}
+
+.box a {
+    padding: 3%;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: goldenrod;
+    color: white;
+}
+.box a:hover {
+    background-color: black;
+}
+
+nav img {
+    height: 70%;
+    animation: zanikanie 2s linear, wielkosc 2s linear;
+}
+
+@keyframes zanikanie {
+    0% {opacity: 0%;}
+    50% {opacity: 50%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes wielkosc {
+    0% {height: 0%;}
+    50% {height: 40%;}
+    100% {height: 70%;}
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: 80vh;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    min-width: 25%;
+    align-items: center;
+    
+}
+
+.box:hover section {
+    background-color: white;
+    background-blend-mode: luminosity;
+}
+
+
+section {
+    height: 80%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#box1 section {
+    background-image: url(img/Natura_residence_spa.jpg);
+}
+
+#box2 section {
+    background-image: url(img/twarz3.jpg);
+}
+
+#box3 section {
+    background-image: url(img/twarz-kosmetyka.jpeg);
+}
+
+#box4 section {
+    background-image: url(img/twarz2.jpeg);
+}
+
+/* strona szkolenia  */
+
+
+#szkolenia {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 4vh;
+}
+
+.szko-sekcja {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.szko-sekcja a {
+    color: white;
+    text-decoration: none;
+    padding: 1%;
+}
+
+.szko-sekcja a:hover {
+    background-color:darkgoldenrod;
+}
+
+/* prowadzacy */
+
+#prowadzacy {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 3%;
+}
+
+#prowadzacy div {
+    /* flex-basis: 50%; */
+    padding: 1%;
+}
+
+#prowadzacy img {
+    height: 30vh;
+    border-radius: 5px;
+    box-shadow: 0 0 60px 1px grey;
+    
+}
+
+#fota {
+    border-right: solid grey;
+    flex-basis: 20%;
+}
+#opis {
+    flex-basis: 70%;
+}
+
+#opis h1 {
+    color: goldenrod;
+}
+
+/* wspolpraca */
+
+#wspolpraca {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+    padding: 4%;
+    
+
+
+}
+
+.wsp-box {
+    flex-basis: 30%;
+    padding: 1%;
+}
+
+.wsp-box h1 {
+    color: goldenrod;
+}
+
+#maspa-logo {
+    background-image: url(img/MASPALOGO.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
