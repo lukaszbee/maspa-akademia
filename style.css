@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 2vh;
 }
 
 /* strona glowna */
@@ -186,4 +187,21 @@ section {
     background-image: url(img/MASPALOGO.png);
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* media  */
+
+@media (max-width: 500px) {
+    html, h1, a {
+        font-size: 3vh;
+    }
+    .box {
+        min-width: 50%;
+        min-height: 20%;
+    }
+    .wsp-box {
+        flex-basis: 100%;
+        padding: 0%;
+    }
+    
 }
