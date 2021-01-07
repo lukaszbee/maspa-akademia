@@ -191,7 +191,7 @@ section {
 
 /* media  */
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     html, h1, a {
         font-size: 3vh;
     }
